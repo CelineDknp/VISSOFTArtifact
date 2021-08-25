@@ -1,7 +1,7 @@
 # How to run the VM
 
 1. If you don't have it already, download [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-2. Download our VM file (entire directory VISSOFTArtifact [here]https://github.com/CelineDknp/VISSOFTArtifact))
+2. Download our VM file (entire directory VISSOFTArtifact [here]https://github.com/CelineDknp/VISSOFTArtifact) )
 3. Import the VM into your VirtualBox: Machine -> Add -> Navigate to our downloaded file -> Select "VISSOFTArtifact" -> Open
 4. Select the VM and click "Start"
 5. Log into Windows: the user is "VISSOFT" and its password is "VISSOFT2021"
