@@ -2,7 +2,7 @@
 
 ## Step 1: Get the VM running
 1. If you don't have it already, download [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-2. Download our VM files [here](https://github.com/CelineDknp/VISSOFTArtifact)
+2. Download our VM files [here](https://zenodo.org/record/5266434)
 3. Unzip the files (somewhere easy to find)
 4. Import the VM into your VirtualBox: Machine -> Add -> Navigate to our downloaded file -> Select the "VISSOFTArtifact.vbox" -> Open
 5. Select the VM and click "Start"
@@ -19,6 +19,6 @@ When you log into the VISSOFT account in the VM, you should arrive on the Deskto
 4. To confirm everything is working, highlight the first 4 lines of code, right click and select "Do it".
 5. Expected behaviour is opening 4 windows: 
 	- Summary (containing only text)
-	- OFCB982.COB
-	- ALCP577.COB
-	- PRCP223.COB
+	- OFCB982.COB a graph represention of the diff, with a fairly high amount of nodes
+	- ALCP577.COB graph of another diff with a moderate amount of nodes
+	- PRCP223.COB graph of a third diff with a small amount of nodes
