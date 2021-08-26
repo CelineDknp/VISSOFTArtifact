@@ -1,7 +1,7 @@
 # Requirements
 
 ## Software
-- VirtualBox installed and working
+- VirtualBox *6.1* installed and working
 
 ## Hardware
 - At least 4GB of RAM available for a VM

@@ -1,7 +1,7 @@
 # Install
 
 ## Step 1: Get the VM running
-1. If you don't have it already, download [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+1. If you don't have it already or have an older version, download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (! You need version 6.1, or the image will not run !)
 2. Download our VM files [here](https://zenodo.org/record/5266434)
 3. Unzip the files (somewhere easy to find)
 4. Import the VM into your VirtualBox: Machine -> Add -> Navigate to our downloaded file -> Select the "VISSOFTArtifact.vbox" -> Open

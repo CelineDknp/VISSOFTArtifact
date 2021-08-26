@@ -4,15 +4,15 @@ This artifact is contained in a Windows VM. On the VM is installed PharoLauncher
 
 # Where can I find the VM ?
 
-The VM is available on Zenodo in open access, at [this link](https://zenodo.org/record/5266434). Simply download the file, unzip it, and load it into VirtualBox. For more detail on the installation process, see our `INSTALL.md` file.
+The VM is available on Zenodo in open access, at [this link](https://zenodo.org/record/5266434). Simply download the file, unzip it, and load it into VirtualBox. For more detail on the installation process, see our [INSTALL.md](https://github.com/CelineDknp/VISSOFTArtifact/blob/main/INSTALL.md) file.
 
 # How to reproduce the results found in the paper ?
 
-First, import our VM into VirtualBox, start it and log into Windows as described in `INSTALL.md` (User: VISSOFT; Password: VISSOFT2021). When you are in, the steps are:
+First, import our VM into VirtualBox, start it and log into Windows as described in [INSTALL.md](https://github.com/CelineDknp/VISSOFTArtifact/blob/main/INSTALL.md) (User: VISSOFT; Password: VISSOFT2021). When you are in, the steps are:
 
 1. Start PharoLauncher from the icon on the desktop
 2. Select the image "VISSOFT Artifact" and click on "Launch" (small green arrow in the top menu, all the way left)
-3. You should see an editor *Playgroud* in Pharo, whith three pieces of code.
+3. You should see an editor (*Playgroud* in Pharo), whith three pieces of code.
 4. Highlight the first 4 lines of code, right click and choose "Do it".
 5. What you see is the first view that we presented to the engineers: a Summary window with details on rules added or removed on the entire migration, along with three example graphs.
 6. Highlight the next block of 6 lines of code, right click and choose "Do it" again.
@@ -35,7 +35,7 @@ var1 postProcess.
 var2 := DiffDrawer with: var1.
 (var2 drawIndividual: RSCanvas new) open.
 ```
->Note: Since the data from Raincode and their client is confidential, in this image you will only find the *.dot* files needed as input for our tool, in an obfuscated version (real rule names have been replaced by Rule1, Rule2,...). Therefore, the image you get will differ slightly from what you see in the paper.
+>Note: Since the data from Raincode and their client is confidential, in this image you will only find the *.dot* files needed as input for our tool, in an obfuscated version (real rule names have been replaced by Rule1, Rule2,...). Therefore, the graphs you'll get will differ slightly from what you see in the paper.
 
 Finally, if you want to explore further and see graphs that were not shown to the engineers or in our paper, you can either: 
 - Take the above two pieces of code and replace the filenames ("OFCB376.COB" in the example) by other names that you can find in the "FullData" folder (shortcut available on the desktop for ease of use). A worthy mention would be the file "PRCP905.COB" that, in its fused version, produces a single fused node (outlier mentionned in our metrics)
