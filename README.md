@@ -1,24 +1,45 @@
-# How to run the VM
+# What does the artifact do ?
 
-1. If you don't have it already, download [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-2. Download our VM file (entire directory VISSOFTArtifact [here](https://github.com/CelineDknp/VISSOFTArtifact))
-3. Import the VM into your VirtualBox: Machine -> Add -> Navigate to our downloaded file -> Select "VISSOFTArtifact" -> Open
-4. Select the VM and click "Start"
-5. Log into Windows: the user is "VISSOFT" and its password is "VISSOFT2021"
->Note: our VM is configured to run using minimal ressources, just 4GB of RAM and 2 CPU cores. It is sufficient to run our tool, but feel free to change those settings in the "System" tab of the VM if you have a more powerful computer.
+This artifact is contained in a Windows VM. On the VM is installed PharoLauncher, a tool that will allow you to launch a pre-installed Pharo image containing our tool as well as all data needed to reproduce the experiment described in our paper. You'll simply have to run the Pharo VM and execute the code that is pre-loaded in it.
 
+# Where can I find the VM ?
 
-# How to run our tool
-1. Launch the VF (cf above)
-2. On the desktop, start "PharoLauncher"
-3. Select the image "VISSOFT Artifact" and click on "Launch"
-3. You should see an editor with three pieces of code, each doing something different. To run one piece of code, select it entirely with your mouse, then right click and select "Do it":
-	- The fist four lines of code open three examples of our visualisation.
-	- The next six lines show unfused version of one of the graph previously shown.
-	- The last four lines of code open *all* graphs for every file in our data. Note that this is 57 graphs in 57 different windows. We advise to limit yourself to the examples above, but if you are curious and want to explore, we put all graphs at your disposal.
+The VM is available on Zenodo in open access, at [this link](https://zenodo.org/record/5266434). Simply download the file, unzip it, and load it into VirtualBox. For more detail on the installation process, see our `INSTALL.md` file.
 
->Note: Since the data from Raincode and their client is confidential, in this image you will only find the *.dot* files needed as input for our tool, in an obfuscated version (real rule names have been replaced by Rule1, Rule2,...).
+# How to reproduce the results found in the paper ?
 
+First, import our VM into VirtualBox, start it and log into Windows as described in `INSTALL.md` (User: VISSOFT; Password: VISSOFT2021). When you are in, the steps are:
+
+1. Start PharoLauncher from the icon on the desktop
+2. Select the image "VISSOFT Artifact" and click on "Launch" (small green arrow in the top menu, all the way left)
+3. You should see an editor *Playgroud* in Pharo, whith three pieces of code.
+4. Highlight the first 4 lines of code, right click and choose "Do it".
+5. What you see is the first view that we presented to the engineers: a Summary window with details on rules added or removed on the entire migration, along with three example graphs.
+6. Highlight the next block of 6 lines of code, right click and choose "Do it" again.
+7. What you see is the unfused version of the previously shown "PRCP223.COB" graph. This was used in our validation to confirm that our merging algorithm is an improvement over the unfused graphs.
+
+If you wish to see the graph used for Figures 4 and 7 of our paper, you can run the following code for the fused version (Fig. 7):
+```
+var1 := LogDiffer with: 'FullData2/OFCB376.COB/OFCB376.COB.v1.dot' and: 'FullData2/OFCB376.COB/OFCB376.COB.v2.dot'.
+var1 createGraphDiff.
+var1 createFused. 
+var1 postProcess.
+var2 := DiffDrawer with: var1.
+(var2 drawAndColapse: RSCanvas new) open.
+```
+And this one for the unfused Fig. 4:
+```
+var1 := LogDiffer with: 'FullData2/OFCB376.COB/OFCB376.COB.v1.dot' and: 'FullData2/OFCB376.COB/OFCB376.COB.v2.dot'.
+var1 createGraphDiff. 
+var1 postProcess.
+var2 := DiffDrawer with: var1.
+(var2 drawIndividual: RSCanvas new) open.
+```
+>Note: Since the data from Raincode and their client is confidential, in this image you will only find the *.dot* files needed as input for our tool, in an obfuscated version (real rule names have been replaced by Rule1, Rule2,...). Therefore, the image you get will differ slightly from what you see in the paper.
+
+Finally, if you want to explore further and see graphs that were not shown to the engineers or in our paper, you can either: 
+- Take the above two pieces of code and replace the filenames ("OFCB376.COB" in the example) by other names that you can find in the "FullData" folder (shortcut available on the desktop for ease of use). A worthy mention would be the file "PRCP905.COB" that, in its fused version, produces a single fused node (outlier mentionned in our metrics)
+- Highlight and execute the last 4 lines of code to open *all* available graphs and explore them all. Note that this is 57 graphs in 57 different windows. While it runs in a few seconds only, it is fairly overwhelming and not the intended use of the tool. We advise to limit yourself to the examples above, but provide these lines for easy access.
 
 # Tool usage, reminder:
 *For more details on usage, you can refer to the cheat sheet available in our GitHub.*
