@@ -24,3 +24,7 @@ When you log into the VISSOFT account in the VM, you should arrive on the Deskto
 	- OFCB982.COB a graph represention of the diff, with a fairly high amount of nodes
 	- ALCP577.COB graph of another diff with a moderate amount of nodes
 	- PRCP223.COB graph of a third diff with a small amount of nodes
+
+## Procedure tested
+- On two separate Windows 10 machines: one with a new install of VirtualBox, one with a previous one (reinstall needed)
+- On two separate MacOS machines: one that needed reboot, one with a QWERTY keyboard (see remark about password) 
