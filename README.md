@@ -18,7 +18,7 @@ First, import our VM into VirtualBox, start it and log into Windows as described
 6. Highlight the next block of 6 lines of code, right click and choose "Do it" again.
 7. What you see is the unfused version of the previously shown "PRCP223.COB" graph. This was used in our validation to confirm that our merging algorithm is an improvement over the unfused graphs.
 
-If you wish to see the graph used for Figures 4 and 7 of our paper, you can run the following code for the fused version (Fig. 7):
+If you wish to see the graph used for Figures 4 and 7 of our paper, you can run the following code for the fused version by copy/pasting and again, highlighting and right click "Do it" (Fig. 7):
 ```
 var1 := LogDiffer with: 'FullData2/OFCB376.COB/OFCB376.COB.v1.dot' and: 'FullData2/OFCB376.COB/OFCB376.COB.v2.dot'.
 var1 createGraphDiff.
@@ -51,4 +51,4 @@ Finally, if you want to explore further and see graphs that were not shown to th
 - White/light gray (node or link): No change
 - Dark gray (node only): Fused node. Click it to see inside (opens another window)
 
-If you want to change the layout of the graph, you can use the buttons in the upper left corner: HorizontalTree is the default, Tree is the same layout but vertically, and Force is a force-based layout. Alternatively, you can drag&drop every node in the graphs.
+If you want to change the layout of the graph, you can use the buttons in the upper left corner: HorizontalTree is the default, Tree is the same layout but vertically, and Force is a force-based layout. Alternatively, you can drag every node in the graphs.
