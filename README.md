@@ -42,7 +42,7 @@ Finally, if you want to explore further and see graphs that were not shown to th
 - Highlight and execute the last 4 lines of code to open *all* available graphs and explore them all. Note that this is 57 graphs in 57 different windows. While it runs in a few seconds only, it is fairly overwhelming and not the intended use of the tool. We advise to limit yourself to the examples above, but provide these lines for easy access.
 
 # Tool usage, reminder:
-*For more details on usage, you can refer to the cheat sheet available in our GitHub.*
+*For more details on usage, you can refer to the [cheat sheet](https://github.com/CelineDknp/VISSOFTArtifact/blob/main/cheatSheet.pdf) available in our GitHub.*
 
 ## Color meaning:
 - Red (node or link): Present in V1 but not in V2 (removed)
