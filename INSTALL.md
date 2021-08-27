@@ -6,7 +6,7 @@
 3. Unzip the files (somewhere easy to find)
 4. Import the VM into your VirtualBox: Machine -> Add -> Navigate to our downloaded file -> Select the "VISSOFTArtifact.vbox" -> Open
 5. Select the VM and click "Start"
-6. Log into Windows: the user is "VISSOFT" and its password is "VISSOFT2021"
+6. Log into Windows: the user is "VISSOFT" and its password is "VISSOFT2021" (! The default keyboard layout is AZERTY, so press SHIFT+number key when typing on a QWERTY keyboard! )
 >Note: our VM is configured to run using minimal ressources, just 4GB of RAM and 2 CPU cores. It is sufficient to run our tool, but feel free to change those settings in the "System" tab of the VM if you have a more powerful computer.
 
 >If you are using MacOS, and a fresh install of VirtualBox, you might run on some issue when launching the VM. A restart is often required, see [this page](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/) for more details.
