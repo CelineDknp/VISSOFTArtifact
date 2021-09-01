@@ -17,7 +17,7 @@ When you log into the VISSOFT account in the VM, you should arrive on the Deskto
 
 1. Start PharoLauncher
 2. Select the image "VISSOFT Artifact" and click on "Launch" (small green arrow in the top menu, all the way right)
-3. You should see an editor *Playgroud* in Pharo, whith three pieces of code. 
+3. You should see an editor (*Playgroud* in Pharo), whith three pieces of code. 
 4. To confirm everything is working, highlight the first 4 lines of code, right click and select "Do it".
 5. Expected behaviour is opening 4 windows: 
 	- Summary (containing only text)
