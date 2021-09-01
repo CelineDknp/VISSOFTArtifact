@@ -11,7 +11,7 @@ The VM is available on Zenodo in open access, at [this link](https://zenodo.org/
 First, import our VM into VirtualBox, start it and log into Windows as described in [INSTALL.md](https://github.com/CelineDknp/VISSOFTArtifact/blob/main/INSTALL.md) (User: VISSOFT; Password: VISSOFT2021). When you are in, the steps are:
 
 1. Start PharoLauncher from the icon on the desktop
-2. Select the image "VISSOFT Artifact" and click on "Launch" (small green arrow in the top menu, all the way left)
+2. Select the image "VISSOFT Artifact" and click on "Launch" (small green arrow in the top menu, all the way right)
 3. You should see an editor (*Playgroud* in Pharo), whith three pieces of code.
 4. Highlight the first 4 lines of code, right click and choose "Do it".
 5. What you see is the first view that we presented to the engineers: a Summary window with details on rules added or removed on the entire migration, along with three example graphs.
