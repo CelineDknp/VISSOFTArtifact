@@ -11,14 +11,14 @@ The VM is available on Zenodo in open access, at [this link](https://zenodo.org/
 First, import our VM into VirtualBox, start it and log into Windows as described in [INSTALL.md](https://github.com/CelineDknp/VISSOFTArtifact/blob/main/INSTALL.md) (User: VISSOFT; Password: VISSOFT2021). When you are in, the steps are:
 
 1. Start PharoLauncher from the icon on the desktop
-2. Select the image "VISSOFT Artifact" and click on "Launch" (small green arrow in the top menu, all the way left)
+2. Select the image "VISSOFT Artifact" and click on "Launch" (small green arrow in the top menu, all the way right)
 3. You should see an editor (*Playgroud* in Pharo), whith three pieces of code.
 4. Highlight the first 4 lines of code, right click and choose "Do it".
 5. What you see is the first view that we presented to the engineers: a Summary window with details on rules added or removed on the entire migration, along with three example graphs.
 6. Highlight the next block of 6 lines of code, right click and choose "Do it" again.
 7. What you see is the unfused version of the previously shown "PRCP223.COB" graph. This was used in our validation to confirm that our merging algorithm is an improvement over the unfused graphs.
 
-If you wish to see the graph used for Figures 4 and 7 of our paper, you can run the following code for the fused version (Fig. 7):
+If you wish to see the graph used for Figures 4 and 7 of our paper, you can run the following code for the fused version by copy/pasting and again, highlighting and right click "Do it" (Fig. 7):
 ```
 var1 := LogDiffer with: 'FullData2/OFCB376.COB/OFCB376.COB.v1.dot' and: 'FullData2/OFCB376.COB/OFCB376.COB.v2.dot'.
 var1 createGraphDiff.
@@ -42,7 +42,7 @@ Finally, if you want to explore further and see graphs that were not shown to th
 - Highlight and execute the last 4 lines of code to open *all* available graphs and explore them all. Note that this is 57 graphs in 57 different windows. While it runs in a few seconds only, it is fairly overwhelming and not the intended use of the tool. We advise to limit yourself to the examples above, but provide these lines for easy access.
 
 # Tool usage, reminder:
-*For more details on usage, you can refer to the cheat sheet available in our GitHub.*
+*For more details on usage, you can refer to the [cheat sheet](https://github.com/CelineDknp/VISSOFTArtifact/blob/main/cheatSheet.pdf) available in our GitHub.*
 
 ## Color meaning:
 - Red (node or link): Present in V1 but not in V2 (removed)
@@ -51,4 +51,4 @@ Finally, if you want to explore further and see graphs that were not shown to th
 - White/light gray (node or link): No change
 - Dark gray (node only): Fused node. Click it to see inside (opens another window)
 
-If you want to change the layout of the graph, you can use the buttons in the upper left corner: HorizontalTree is the default, Tree is the same layout but vertically, and Force is a force-based layout. Alternatively, you can drag&drop every node in the graphs.
+If you want to change the layout of the graph, you can use the buttons in the upper left corner: HorizontalTree is the default, Tree is the same layout but vertically, and Force is a force-based layout. Alternatively, you can drag every node in the graphs.
